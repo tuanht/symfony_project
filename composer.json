@@ -53,7 +53,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
         ],
         "compile": [
-            "rm web/app_dev.php"
+            "rm web/app_dev.php",
+            "rm web/config.php"
         ]
     },
     "config": {
