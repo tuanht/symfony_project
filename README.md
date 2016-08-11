@@ -8,3 +8,12 @@ A simple Symfony 3.0 project, with following included:
 Setting 2 following environment variables in Travis to automatically deploy to Heroku:
 - `HEROKU_API_KEY`: Heroku's authorization token/API key.
 - `HEROKU_APP_NAME`: Heroku's app name.
+
+# Speedup Docker
+:warning: Mac OS X only
+
+[Docker Machine NFS](https://github.com/adlogix/docker-machine-nfs) help activate NFS for an existing boot2docker box created through Docker Machine.
+```sh
+$ brew install docker-machine-nfs
+$ docker-machine-nfs default --mount-opts="nolock,vers=3,udp,noatime"
+```
